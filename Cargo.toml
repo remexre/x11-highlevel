@@ -1,0 +1,9 @@
+[package]
+authors = ["Nathaniel Ringo <remexre@gmail.com>"]
+description = "High-level bindings for X11"
+name = "x11-highlevel"
+version = "0.1.0"
+
+[dependencies.x11]
+features = ["xinput", "xlib"]
+version = "2.13.0"
