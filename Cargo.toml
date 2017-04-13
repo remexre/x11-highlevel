@@ -4,6 +4,9 @@ description = "High-level bindings for X11"
 name = "x11-highlevel"
 version = "0.1.0"
 
+[dependencies]
+libc = "0.2.21"
+
 [dependencies.x11]
 features = ["xinput", "xlib"]
 version = "2.13.0"
