@@ -14,6 +14,7 @@ impl<'a> Display<'a> {
     /// Creates a new Display based on the `DISPLAY` environment variable.
     pub fn new() -> Option<Display<'a>> {
         use std::env;
+        println!("{:?}", env::var("DISPLAY"));
         env::var("DISPLAY").ok().and_then(|s| Display::connect(&s))
     }
 
